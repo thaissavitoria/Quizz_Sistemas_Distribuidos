@@ -1,0 +1,5 @@
+beans\Pergunta.class
+beans\PontuacaoJogador.class
+beans\Perguntas.class
+com\mycompany\quizzt\resources\JakartaEE10Resource.class
+com\mycompany\quizzt\JakartaRestConfiguration.class
