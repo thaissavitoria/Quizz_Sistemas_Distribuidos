@@ -98,10 +98,10 @@
         <div class="ranking-container">
             <h1 class="ranking-title">Ranking de Jogadores</h1>
             
-            <%         
-                try{
+            <%    
+               try{
                 ArrayList<PontuacaoJogador> scores = new ArrayList<>();
-                BufferedReader br = new BufferedReader(new FileReader("‪c:\\Dados\\Resultados.txt"));
+                BufferedReader br = new BufferedReader(new FileReader("C:\\Dados\\Resultados.txt"));
                 String line;
                 while ((line = br.readLine()) != null) {
                     String[] parts = line.split(": ");
@@ -113,7 +113,6 @@
                     }
                 }
                 
-                // Ordena os scores em ordem decrescente
                 Collections.sort(scores, new Comparator<PontuacaoJogador>() {
                     @Override
                     public int compare(PontuacaoJogador p1, PontuacaoJogador p2) {
@@ -141,9 +140,9 @@
             <%
                     position++;
                 }
-}catch(Exception e){
-e.printStackTrace();
-}
+            }catch(Exception e){
+            e.printStackTrace();
+            }
             %>
             
             <a href="index.jsp" class="back-button">Voltar ao Início</a>

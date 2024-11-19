@@ -97,7 +97,6 @@
 
                 try{
                 File arquivo = new File("c:\\Dados\\Resultados.txt");     
-                //arquivo.createNewFile();
                 FileWriter fw = new FileWriter(arquivo, true);
                 
                 PrintWriter pw = new PrintWriter(fw);
